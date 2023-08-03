@@ -1,5 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
+  event = "BufReadPre",
   config = function()
     require("neodev").setup()
     require("mason").setup()
@@ -70,6 +71,7 @@ return {
     },
     {
       "hrsh7th/nvim-cmp",
+      event = "InsertEnter",
       config = function()
         local cmp = require("cmp")
         cmp.setup({
