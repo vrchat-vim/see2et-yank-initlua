@@ -19,3 +19,5 @@ opt.smartindent = true
 opt.laststatus = 3
 
 opt.mouse = 'a'
+
+opt.ch = 0
